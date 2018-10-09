@@ -2,7 +2,7 @@
 
 ## Setup
 
-1.  [Install `bitbox-cli`](https://www.npmjs.com/package/bitbox-cli) globally
+1.  [Install `bitbox-sdk`](https://www.npmjs.com/package/bitbox-sdk) globally
     - `npm install bitbox-cli --global`
 2.  Scaffold an Angular app w/ BITBOX web bindings
     - `bitbox new myApp --scaffold next`
