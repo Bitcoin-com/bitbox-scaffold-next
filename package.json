@@ -1,6 +1,6 @@
 {
   "name": "bitbox-scaffold-nextjs",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "license": "MIT",
   "description": "Basic nextJS app w/ BITBOX bindings",
   "author": "Gabriel Cardona @ Bitcoin.com",
@@ -13,7 +13,7 @@
     "coverage:report": "nyc --reporter=html mocha --require babel-core/register --timeout 5000"
   },
   "dependencies": {
-    "bitbox-sdk": "3.0.0",
+    "bitbox-sdk": "3.0.1",
     "mocha": "^5.2.0",
     "next": "^5.1.0",
     "react": "^16.3.0",
