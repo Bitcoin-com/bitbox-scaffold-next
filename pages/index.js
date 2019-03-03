@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Head from "../components/head";
 import Nav from "../components/nav";
-let BITBOXSDK = require("bitbox-sdk/lib/bitbox-sdk").default;
+let BITBOXSDK = require("bitbox-sdk");
 let BITBOX = new BITBOXSDK();
 
 class Index extends React.Component {
@@ -40,7 +40,7 @@ class Index extends React.Component {
     let rootSeed = BITBOX.Mnemonic.toSeed(mnemonic);
 
     // master HDNode
-    let masterHDNode = BITBOX.HDNode.fromSeed(rootSeed, "bitcoincash");
+    let masterHDNode = BITBOX.HDNode.fromSeed(rootSeed, "mainnet");
 
     // HDNode of BIP44 account
     let account = BITBOX.HDNode.derivePath(masterHDNode, "m/44'/145'/0'");
